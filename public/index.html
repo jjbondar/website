@@ -1,17 +1,277 @@
 <!DOCTYPE html>
-<html lang="">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <link rel="icon" href="<%= BASE_URL %>favicon.ico">
-    <title><%= htmlWebpackPlugin.options.title %></title>
-  </head>
-  <body>
-    <noscript>
-      <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
-    </noscript>
-    <div id="app"></div>
-    <!-- built files will be auto injected -->
-  </body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<header>
+    <h1>Welcome to Our Website</h1>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="content.html">Content</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+<main>
+    <!-- Main Section -->
+    <section id="main">
+        <div class="main-content">
+            <h1>Welcome to our site!</h1>
+            <p>We help your business grow in the digital environment.</p>
+            <a href="#services" class="btn">Our services</a>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about">
+        <div class="container">
+            <h2>About us</h2>
+            <p>We are a team of professionals specializing in creating innovative solutions for your business. Learn more about our services and experience.</p>
+            <a href="about.html" class="btn">Learn more</a>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services">
+        <div class="container">
+            <h2>Our services</h2>
+            <div class="service-cards">
+                <div class="service-card">
+                    <h3>Website development</h3>
+                    <p>We create modern, convenient and functional websites.</p>
+                    <a href="services.html" class="btn">Learn more</a>
+                </div>
+                <div class="service-card">
+                    <h3>SEO optimization</h3>
+                    <p>We improve the visibility of your site in search engines.</p>
+                    <a href="services.html" class="btn">Learn more</a>
+                </div>
+                <div class="service-card">
+                    <h3>Marketing</h3>
+                    <p>Growing your business with online marketing.</p>
+                    <a href="services.html" class="btn">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials">
+        <div class="container">
+            <h2>What our clients say</h2>
+            <div class="testimonial-cards">
+                <div class="testimonial-card">
+                    <p>"This was one of the best teams to work with! The website works great!"</p>
+                    <cite>- Oleksandr, CEO of the company</cite>
+                </div>
+                <div class="testimonial-card">
+                    <p>"We saw a significant improvement in business results after SEO optimization."</p>
+                    <cite>- Maria, Marketing Director</cite>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="container">
+            <h2>Contact us</h2>
+            <p>Want to know more? Write to us, and we will contact you shortly!</p>
+            <a href="contact.html" class="btn">Write to us</a>
+        </div>
+    </section>
+</main>
+<footer>
+    <p>&copy; 2024 Your company. All rights reserved.</p>
+</footer>
+</body>
 </html>
+
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        line-height: 1.6;
+        background-color: #f4f4f4;
+    }
+
+    .container {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    /* Main Section */
+    #main {
+        background-image: url('src/assets/main_background.jpg');
+        background-size: cover;
+        background-position: center;
+        color: white;
+        padding: 80px 0;
+        text-align: center;
+    }
+
+    #main h1 {
+        font-size: 3rem;
+        margin-bottom: 20px;
+    }
+
+    #main p {
+        font-size: 1.5rem;
+        margin-bottom: 30px;
+    }
+
+    #main .btn {
+        background-color: #007BFF;
+        color: white;
+        padding: 15px 30px;
+        text-decoration: none;
+        border-radius: 5px;
+    }
+
+    #main .btn:hover {
+        background-color: #0056b3;
+    }
+
+    /* About Section */
+    #about {
+        background-color: #fff;
+        padding: 60px 0;
+        text-align: center;
+    }
+
+    #about h2 {
+        font-size: 2.5rem;
+        margin-bottom: 20px;
+    }
+
+    #about p {
+        font-size: 1.2rem;
+        margin-bottom: 30px;
+    }
+
+    #about .btn {
+        background-color: #007BFF;
+        color: white;
+        padding: 10px 20px;
+        text-decoration: none;
+        border-radius: 5px;
+    }
+
+    /* Services Section */
+    #services {
+        background-color: #e9ecef;
+        padding: 60px 0;
+        text-align: center;
+    }
+
+    #services h2 {
+        font-size: 2.5rem;
+        margin-bottom: 40px;
+    }
+
+    .service-cards {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .service-card {
+        background-color: white;
+        padding: 30px;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        width: 30%;
+        text-align: center;
+    }
+
+    .service-card h3 {
+        font-size: 1.8rem;
+        margin-bottom: 20px;
+    }
+
+    .service-card p {
+        font-size: 1.1rem;
+        margin-bottom: 20px;
+    }
+
+    .service-card .btn {
+        background-color: #007BFF;
+        color: white;
+        padding: 10px 20px;
+        text-decoration: none;
+        border-radius: 5px;
+    }
+
+    .service-card .btn:hover {
+        background-color: #0056b3;
+    }
+
+    /* Testimonials Section */
+    #testimonials {
+        padding: 60px 0;
+        background-color: #fff;
+        text-align: center;
+    }
+
+    .testimonial-cards {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .testimonial-card {
+        background-color: #f8f9fa;
+        padding: 20px;
+        width: 40%;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .testimonial-card p {
+        font-style: italic;
+        margin-bottom: 10px;
+    }
+
+    .testimonial-card cite {
+        display: block;
+        font-weight: bold;
+        margin-top: 10px;
+    }
+
+    /* Contact Section */
+    #contact {
+        background-color: #007BFF;
+        color: white;
+        padding: 60px 0;
+        text-align: center;
+    }
+
+    #contact h2 {
+        font-size: 2.5rem;
+        margin-bottom: 20px;
+    }
+
+    #contact p {
+        font-size: 1.2rem;
+        margin-bottom: 30px;
+    }
+
+    #contact .btn {
+        background-color: #ffffff;
+        color: #007BFF;
+        padding: 10px 20px;
+        text-decoration: none;
+        border-radius: 5px;
+    }
+
+    #contact .btn:hover {
+        background-color: #f0f0f0;
+    }
+</style>
