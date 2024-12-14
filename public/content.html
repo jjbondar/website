@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Content</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<header>
+    <h1>Content Page</h1>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="content.html">Content</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+<main>
+
+    <section id="content">
+        <h2>Our Articles</h2>
+        <article>
+            <h3>How to Create an Effective Website</h3>
+            <p>In this article, we will share the steps that will help you create a website that attracts users and increases conversions.</p>
+            <a href="article1.html">Read more</a>
+        </article>
+        <article>
+            <h3>Design Trends for 2024</h3>
+            <p>Learn about the latest web design trends that will help make your website modern and stylish.</p>
+            <a href="article2.html">Read more</a>
+        </article>
+        <article>
+            <h3>How to Choose Hosting for Your Website</h3>
+            <p>In this article, we will look at the important aspects of choosing hosting for your web project.</p>
+            <a href="article3.html">Read more</a>
+        </article>
+    </section>
+    <section>
+        <h2>Useful Resources</h2>
+        <div class="resource">
+            <h3>How to Build a Website from Scratch</h3>
+            <p>Read our complete beginner's guide, where we explain the steps to build a website from start to finish.</p>
+            <a href="guide1.html">Read Guide</a>
+        </div>
+        <div class="resource">
+            <h3>Search Engine Optimization (SEO)</h3>
+            <p>This resource will help you understand how to improve your website's SEO to increase your visibility on Google.</p>
+            <a href="guide2.html">Read Guide</a>
+        </div>
+    </section>
+    <section id="content-product">
+        <h2>Our products</h2>
+
+        <div class="product">
+            <img src="product1.jpg" alt="Product 1">
+            <h3>Product 1</h3>
+            <p>This is our most popular product that solves many problems for your businesses.</p>
+            <a href="product1.html">More details</a>
+        </div>
+
+        <div class="product">
+            <img src="product2.jpg" alt="Product 2">
+            <h3>Product 2</h3>
+            <p>An innovative product that simplifies the work of your team.</p>
+            <a href="product2.html">More details</a>
+        </div>
+
+        <div class="product">
+            <img src="product3.jpg" alt="Product 3">
+            <h3>Product 3</h3>
+            <p>A modern product for optimizing business processes.</p>
+            <a href="product3.html">More details</a>
+        </div>
+    </section>
+    <section id="content-video">
+        <h2>Our Videos</h2>
+        <div class="video">
+            <h3>How We Work</h3>
+            <video controls>
+                <source src="how_we_work.mp4" type="video/mp4">
+                Your browser does not support video.
+            </video>
+        </div>
+        <div class="video">
+            <h3>Our Development Process</h3>
+            <video controls>
+                <source src="our_process.mp4" type="video/mp4">
+                Your browser does not support video.
+            </video>
+        </div>
+    </section>
+</main>
+<footer>
+    <p>&copy; 2024 Your Website</p>
+</footer>
+</body>
+</html>
+
+<style>
+    article {
+        border-bottom: 1px solid #ddd;
+        padding: 20px 0;
+    }
+
+    article h3 {
+        font-size: 1.8rem;
+        margin-bottom: 10px;
+    }
+
+    article p {
+        font-size: 1rem;
+        line-height: 1.5;
+    }
+
+    article a {
+        color: #007BFF;
+        text-decoration: none;
+    }
+
+    article a:hover {
+        text-decoration: underline;
+    }
+    #content {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .resource {
+        background-color: #f9f9f9;
+        padding: 20px;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+    }
+
+    .resource h3 {
+        font-size: 1.7rem;
+        margin-bottom: 10px;
+    }
+
+    .resource p {
+        font-size: 1rem;
+        color: #555;
+    }
+
+    .resource a {
+        color: #007BFF;
+        text-decoration: none;
+    }
+
+    .resource a:hover {
+        text-decoration: underline;
+    }
+    #content-product {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+    }
+
+    .product {
+        background-color: #f4f4f4;
+        padding: 20px;
+        text-align: center;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .product img {
+        width: 100%;
+        height: auto;
+        border-radius: 5px;
+    }
+
+    .product h3 {
+        margin: 15px 0;
+        font-size: 1.6rem;
+    }
+
+    .product p {
+        color: #555;
+        font-size: 1rem;
+    }
+
+    .product a {
+        color: #007BFF;
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+    .product a:hover {
+        text-decoration: underline;
+    }
+    #content-video {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .video {
+        background-color: #f9f9f9;
+        padding: 20px;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+    }
+
+    .video h3 {
+        font-size: 1.7rem;
+        margin-bottom: 10px;
+    }
+
+    video {
+        width: 100%;
+        border-radius: 5px;
+    }
+</style>
