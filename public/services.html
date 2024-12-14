@@ -1,10 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services</title>
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-$END$
+<header>
+    <h1>Services</h1>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="content.html">Content</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+<main>
+    <section id="services">
+        <h2>Our services</h2>
+        <div class="service-card">
+            <h3>Consultations</h3>
+            <p>We provide professional consultations for your business.</p>
+            <a href="contact.html" class="btn">Contact us</a>
+        </div>
+        <div class="service-card">
+            <h3>Website development</h3>
+            <p>We create modern and functional websites for your business.</p>
+            <a href="contact.html" class="btn">Order</a>
+        </div>
+    </section>
+</main>
+<footer>
+    <p>&copy; 2024 Your Website</p>
+</footer>
 </body>
 </html>
+
+<script>
+    document.querySelector('form').addEventListener('submit', function(event) {
+        event.preventDefault( );
+        alert("Your message has been sent!");
+    });
+</script>
+
+<style>
+    .btn {
+        background-color: #007BFF;
+        color: white;
+        padding: 10px 20px;
+        text-decoration: none;
+        border-radius: 5px;
+    }
+
+    .btn:hover {
+        background-color: #0056b3;
+    }
+    .service-card {
+        border: 1px solid #ddd;
+        padding: 20px;
+        margin: 10px 0;
+        border-radius: 8px;
+    }
+
+    .service-card h3 {
+        font-size: 1.5rem;
+    }
+
+    .service-card p {
+        font-size: 1rem;
+    }
+</style>
